@@ -1,0 +1,78 @@
+<!doctype html><html lang="en" data-theme="light"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>UniVault | Resources</title>
+<meta name="description" content="Search and browse UniVault resources."/>
+<meta name="theme-color" content="#16a34a"/>
+<link rel="stylesheet" href="assets/css/styles.css"/>
+</head><body>
+<div id="topProgress" aria-hidden="true"></div>
+<div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<header class="nav"><div class="container nav-inner">
+  <div class="brand"><span class="logo" aria-hidden="true"></span>
+    <div><div>UniVault</div><small>Student Resource Hub</small></div>
+  </div>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="resources.html">Resources</a>
+    <a href="cover-pages.html">Cover Pages</a>
+    <a href="timetables.html">Timetables</a>
+    <a href="lecturers.html">Lecturers</a>
+    <button class="btn icon" id="themeBtn" type="button">Dark mode</button>
+  </nav>
+</div></header>
+
+<main class="container" style="padding:18px 0">
+  <div class="section-head">
+    <div>
+      <h2 class="section-title">Resources</h2>
+      <p class="section-sub">Search and filter materials. <span id="resourceCount">0 shown</span></p>
+    </div>
+    <div class="controls">
+      <div class="input"><span aria-hidden="true">⌕</span><input id="searchInput" type="text" placeholder="Search by title or keywords"/></div>
+      <select class="select" id="filterType" aria-label="Type"></select>
+      <select class="select" id="filterLevel" aria-label="Level"></select>
+      <select class="select" id="filterFormat" aria-label="Format"></select>
+      <select class="select" id="sortBy" aria-label="Sort">
+        <option>Recent</option>
+        <option>A–Z</option>
+        <option>Oldest</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="quick-tabs" style="margin-bottom:12px">
+    <button class="tab active" data-cat="All" type="button">All</button>
+    <button class="tab" data-cat="Notes" type="button">Notes</button>
+    <button class="tab" data-cat="Tutorials" type="button">Tutorials</button>
+    <button class="tab" data-cat="Past Papers" type="button">Past Papers</button>
+    <button class="tab" data-cat="Forms" type="button">Forms</button>
+    <button class="tab" data-cat="Timetables" type="button">Timetables</button>
+  </div>
+
+  <div class="notice">Total items: <b id="countTotal">0</b>. Add more by uploading files into the vault folders.</div>
+
+  <div class="library" id="libraryGrid" aria-live="polite" style="margin-top:14px"></div>
+</main>
+
+<div class="modal" id="modal" aria-hidden="true" role="dialog" aria-label="Viewer">
+  <div class="card modal-card">
+    <div class="modal-head">
+      <div>
+        <span class="pill">Material</span>
+        <h3 id="mTitle" style="margin:8px 0 6px">Title</h3>
+        <div class="section-sub" id="mMeta"></div>
+        <div class="badges" id="mTags" style="margin-top:10px"></div>
+      </div>
+      <button class="btn" id="closeModal" type="button">Close</button>
+    </div>
+    <div class="notice" id="mSummary"></div>
+    <div id="mViewer" style="margin-top:12px"></div>
+  </div>
+</div>
+<footer class="footer"><div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap">
+  <div>© <span id="year"></span> UniVault.</div>
+  <div class="pill">Built for GitHub Pages</div>
+</div></footer>
+<button id="backToTop" class="fab" type="button" aria-label="Back to top">↑</button>
+<script src="assets/js/app.js"></script>
+</body></html>

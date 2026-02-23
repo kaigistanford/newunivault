@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" data-theme="light"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>UniVault | Home</title>
+<meta name="description" content="UniVault: modern static site for notes, tutorials, past papers and student materials."/>
+<meta name="theme-color" content="#16a34a"/>
+<link rel="stylesheet" href="assets/css/styles.css"/>
+</head><body>
+<div id="topProgress" aria-hidden="true"></div>
+<div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<header class="nav"><div class="container nav-inner">
+  <div class="brand"><span class="logo" aria-hidden="true"></span>
+    <div><div>UniVault</div><small>Student Resource Hub</small></div>
+  </div>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="resources.html">Resources</a>
+    <a href="cover-pages.html">Cover Pages</a>
+    <a href="timetables.html">Timetables</a>
+    <a href="lecturers.html">Lecturers</a>
+    <button class="btn icon" id="themeBtn" type="button">Dark mode</button>
+  </nav>
+</div></header>
+
+<main id="home">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="card hero-card">
+        <div class="kicker">NOTES • TUTORIALS • PAST PAPERS • FORMS</div>
+        <h1>UniVault — a clean place for student materials.</h1>
+        <p class="lead">Search notes, tutorials and past papers in one library. Add new files by uploading them into the vault folders and pushing to GitHub.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn primary" href="resources.html">Open Resources</a>
+          <a class="btn" href="cover-pages.html">Cover Pages</a>
+          <a class="btn ghost" href="timetables.html">Timetables</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b id="statNotes">0</b><div>Notes</div></div>
+          <div class="stat"><b id="statTutorials">0</b><div>Tutorials</div></div>
+          <div class="stat"><b id="statPapers">0</b><div>Past Papers</div></div>
+        </div>
+        <div class="notice">Tip: PDFs display best. PPTX/DOCX can open in a new tab.</div>
+      </div>
+      <aside class="card box">
+        <h3>Popular sections</h3>
+        <p>Quick access to common materials for students.</p>
+        <div class="badges" style="margin-top:12px">
+          <a class="badge" href="resources.html" style="cursor:pointer">Lecture Notes</a>
+          <a class="badge" href="resources.html" style="cursor:pointer">Tutorials</a>
+          <a class="badge" href="resources.html" style="cursor:pointer">Past Papers</a>
+          <a class="badge" href="resources.html" style="cursor:pointer">Forms</a>
+          <a class="badge" href="resources.html" style="cursor:pointer">Timetables</a>
+        </div>
+        <div class="notice">Everything is searchable on the Resources page.</div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">What you will find here</h2>
+          <p class="section-sub">Materials organized for quick access.</p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="card box"><h3>Resources Library</h3><p>Search + filters + quick categories for fast retrieval.</p></div>
+        <div class="card box"><h3>Cover Pages</h3><p>Generate a clean cover page and print/save as PDF.</p></div>
+        <div class="card box"><h3>Timetables & Lecturers</h3><p>Simple pages for schedules and contacts.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap">
+  <div>© <span id="year"></span> UniVault.</div>
+  <div class="pill">Built for GitHub Pages</div>
+</div></footer>
+<button id="backToTop" class="fab" type="button" aria-label="Back to top">↑</button>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

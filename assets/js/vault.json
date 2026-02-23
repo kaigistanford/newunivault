@@ -1,0 +1,17 @@
+[
+  {
+    "id": "welcome",
+    "title": "Welcome to UniVault Resources",
+    "category": "Notes",
+    "type": "Guide",
+    "level": "All",
+    "format": "HTML",
+    "tags": [
+      "UniVault",
+      "Start"
+    ],
+    "summary": "A quick welcome note. Add your files into the vault folders and they will appear automatically.",
+    "path": "vault/_misc/welcome.html",
+    "added": "2026-02-23"
+  }
+]

@@ -1,0 +1,70 @@
+<!doctype html><html lang="en" data-theme="light"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>UniVault | Cover Pages</title>
+<meta name="description" content="Generate a cover page."/>
+<meta name="theme-color" content="#16a34a"/>
+<link rel="stylesheet" href="assets/css/styles.css"/>
+</head><body>
+<div id="topProgress" aria-hidden="true"></div>
+<div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<header class="nav"><div class="container nav-inner">
+  <div class="brand"><span class="logo" aria-hidden="true"></span>
+    <div><div>UniVault</div><small>Student Resource Hub</small></div>
+  </div>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="resources.html">Resources</a>
+    <a href="cover-pages.html">Cover Pages</a>
+    <a href="timetables.html">Timetables</a>
+    <a href="lecturers.html">Lecturers</a>
+    <button class="btn icon" id="themeBtn" type="button">Dark mode</button>
+  </nav>
+</div></header>
+
+<main class="container" style="padding:18px 0">
+  <div class="grid-2">
+    <div class="card box">
+      <h2 class="section-title" style="margin:0 0 8px">Cover Page Generator</h2>
+      <p class="section-sub">Fill the form and print/save.</p>
+
+      <form id="coverForm" style="margin-top:12px; display:grid; gap:10px">
+        <input class="select" id="institution" placeholder="Institution (e.g., IRDP)" />
+        <input class="select" id="department" placeholder="Department / Programme" />
+        <input class="select" id="course" placeholder="Course / Module" />
+        <input class="select" id="title" placeholder="Title of work" />
+        <input class="select" id="name" placeholder="Student name" />
+        <input class="select" id="reg" placeholder="Registration number" />
+        <input class="select" id="supervisor" placeholder="Supervisor (optional)" />
+        <input class="select" id="date" placeholder="Date (optional)" />
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:6px">
+          <button class="btn primary" id="printBtn" type="button">Print / Save PDF</button>
+          <span class="pill">Tip: Choose “Save as PDF” in print</span>
+        </div>
+      </form>
+    </div>
+
+    <div class="card box">
+      <h2 class="section-title" style="margin:0 0 8px">Preview</h2>
+      <div class="card" style="padding:22px; border-radius:18px; box-shadow:none">
+        <div style="text-align:center">
+          <div style="font-weight:900; letter-spacing:.02em" id="pInstitution">INSTITUTE / UNIVERSITY</div>
+          <div style="margin-top:6px; color:var(--muted)" id="pDepartment">DEPARTMENT</div>
+          <div style="margin-top:10px" class="pill" id="pCourse">COURSE / MODULE</div>
+          <div style="margin-top:18px; font-size:20px; font-weight:900" id="pTitle">TITLE OF WORK</div>
+          <div style="margin-top:18px; color:var(--muted)">Prepared by</div>
+          <div style="margin-top:6px; font-weight:800" id="pName">STUDENT NAME</div>
+          <div style="margin-top:6px; color:var(--muted)" id="pReg">REG NO.</div>
+          <div style="margin-top:12px; color:var(--muted)" id="pSupervisor"></div>
+          <div style="margin-top:18px; font-weight:700" id="pDate"></div>
+        </div>
+      </div>
+      <div class="notice">You can customize this later (logo, spacing, etc.).</div>
+    </div>
+  </div>
+</main>
+<footer class="footer"><div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap">
+  <div>© <span id="year"></span> UniVault.</div>
+  <div class="pill">Cover Pages</div>
+</div></footer>
+<script src="assets/js/cover.js"></script>
+</body></html>
